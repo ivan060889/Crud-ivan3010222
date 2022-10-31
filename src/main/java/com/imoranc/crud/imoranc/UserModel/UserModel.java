@@ -38,13 +38,22 @@ public class UserModel
         age=33;
     }
 
-    public UserModel(String name, String surname, String country, String ocupation, String profesional, Integer age) {
+    public UserModel(long id ,String name, String surname, String country, String ocupation, String profesional, Integer age) {
+        this.id=id;
         this.name = name;
         this.surname = surname;
         this.country = country;
         this.ocupation = ocupation;
         this.profesional = profesional;
         this.age = age;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {
